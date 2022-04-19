@@ -161,8 +161,20 @@ html {
     margin: 15px;
     padding: 15px;
 }
+.padre {
+    display: grid;
+    grid-template-areas:
+        "navegacion navegacion navegacion"
+        "encabezado encabezado encabezado"
+        "parrafo1 parrafo1 parrafo1"
+        "sec1 . sec2"
+        "vid vid vid"
+        "pie pie pie";
+  grid-template-columns: repeat(1fr);
+  grid-template-rows: repeat(1fr);
+}
 
-@media (min-width:361px) and (max-width:768px) {
+/* @media (min-width:361px) and (max-width:768px) {
     .padre {
         display: grid;
         grid-template-areas: "navegacion navegacion"
@@ -174,23 +186,7 @@ html {
             "pie pie";
         grid-template-columns: repeat(1fr);
         grid-template-rows: repeat(1fr);
-
-
-    }
-
-    .padre {
-        display: grid;
-        grid-template-areas:
-            "navegacion navegacion navegacion"
-            "encabezado encabezado encabezado"
-            "parrafo1 parrafo1 parrafo1"
-            "sec1 . sec2"
-            "vid vid vid"
-            "pie pie pie";
-        grid-template-columns: repeat(1fr);
-        grid-template-rows: repeat(1fr);
-    }
-
+    } */
     .encabezado {
         grid-area: encabezado;
     }
@@ -239,5 +235,16 @@ html {
     .formulario{
         grid-area: formu;
     }
+    .field1{
+        display: block;
+        width: 400px;
+        height: auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    .divModelForm{
+        padding: 10px 10px 10px 0px; 
+    }
 
-}
+
