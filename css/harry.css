@@ -80,6 +80,9 @@ html {
     text-align: center;
     text-decoration: none;
     font-size: 15px;
+    /* position: fixed;
+    top: 0;
+    width: 100%; */
 }
 
 .navBar>li {
@@ -161,6 +164,7 @@ html {
     margin: 15px;
     padding: 15px;
 }
+
 .padre {
     display: grid;
     grid-template-areas:
@@ -170,14 +174,15 @@ html {
         "sec1 . sec2"
         "vid vid vid"
         "pie pie pie";
-  grid-template-columns: repeat(1fr);
-  grid-template-rows: repeat(1fr);
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(1fr);
 }
 
 /* @media (min-width:361px) and (max-width:768px) {
     .padre {
         display: grid;
-        grid-template-areas: "navegacion navegacion"
+        grid-template-areas: 
+            "navegacion navegacion"
             "encabezado encabezado"
             "parrafo1 parrafo1"
             "sec1 sec1"
@@ -187,64 +192,66 @@ html {
         grid-template-columns: repeat(1fr);
         grid-template-rows: repeat(1fr);
     } */
-    .encabezado {
-        grid-area: encabezado;
-    }
+.encabezado {
+    grid-area: encabezado;
+}
 
-    .navegacion {
-        grid-area: navegacion;
-    }
+.navegacion {
+    grid-area: navegacion;
+}
 
-    .parrafo1 {
-        grid-area: parrafo1;
-    }
+.parrafo1 {
+    grid-area: parrafo1;
+}
 
-    .seccion1 {
-        /* width: 50%; */
-        grid-area: sec1;
-    }
+.seccion1 {
+    /* width: 50%; */
+    grid-area: sec1;
+}
 
-    .seccion2 {
-        /* width: 50%; */
-        grid-area: sec2;
-    }
+.seccion2 {
+    /* width: 50%; */
+    grid-area: sec2;
+}
 
-    .videoPrincipal {
-        grid-area: vid;
-    }
+.videoPrincipal {
+    grid-area: vid;
+}
 
-    .pie {
-        grid-area: pie;
-    }
+.pie {
+    grid-area: pie;
+}
 
-    .padreContacto {
-        display: grid;
-        grid-template-areas:
-            "navegacion navegacion navegacion"
-            "titulo titulo titulo"
-            "formu formu formu"
-            "formu formu formu"
-            "formu formu formu"
-            "pie pie pie";
-        grid-template-columns: repeat(1fr);
-        grid-template-rows: repeat(1fr);
-    }
-    .titulo{
-        grid-area: titulo;
-    }
-    .formulario{
-        grid-area: formu;
-    }
-    .field1{
-        display: block;
-        width: 400px;
-        height: auto;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: auto;
-    }
-    .divModelForm{
-        padding: 10px 10px 10px 0px; 
-    }
+.padreContacto {
+    display: grid;
+    grid-template-areas:
+        "navegacion navegacion navegacion"
+        "titulo titulo titulo"
+        "formu formu formu"
+        "formu formu formu"
+        "formu formu formu"
+        "pie pie pie";
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(1fr);
+}
 
+.titulo {
+    grid-area: titulo;
+}
 
+.formulario {
+    grid-area: formu;
+}
+
+.field1 {
+    display: block;
+    width: 400px;
+    height: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.divModelForm {
+    padding: 10px 10px 10px 0px;
+}
