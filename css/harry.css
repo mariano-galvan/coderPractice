@@ -1,59 +1,74 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
-.textoDorado{
-    color:goldenrod;
+.textoDorado {
+    color: goldenrod;
     font-weight: bolder;
-  }
-.textoSilver{
-    margin: 10px;
-    color:#9d9d9d
-}
-.textoSilver--align{
-    text-align: justify;
-}
-.textoSilverContacto{
-    color:#9d9d9d
+    font-size: 15px;
 }
 
-.textoClasico{
+.textoDorado--align {
+    text-align: center;
+}
+
+.textoSilver {
+    margin: 10px;
+    color: #9d9d9d;
+    font-size: 15px;
+}
+
+.textoSilver--align {
+    text-align: justify;
+}
+
+.textoSilverContacto {
+    color: #9d9d9d;
+    font-size: 15px;
+}
+
+.textoClasico {
     text-align: center;
     font-weight: bolder;
 }
-.textoDerecha{
+
+.textoDerecha {
     text-align: right;
 }
 
-.textoGrande{
+.textoGrande {
     font-size: 35px;
     font-weight: bold;
 }
-.textoMediano{
+
+.textoMediano {
     font-size: 20px;
 }
 
-.videoPortada{
+.videoPortada {
     border-radius: 15px;
 }
 
-.videoBoton{
+.videoBoton {
     border-radius: 10px;
     color: aquamarine;
 }
-.videoBoton--fondoVerde{
+
+.videoBoton--fondoVerde {
     background-color: bisque;
 }
-.videoBoton--fondoAzul{
+
+.videoBoton--fondoAzul {
     background-color: greenyellow;
 }
 
-.backGroundBody{
+.backGroundBody {
     background-color: rgb(7, 31, 31);
 }
 
@@ -64,19 +79,24 @@ html{
     opacity: 0.8;
     text-align: center;
     text-decoration: none;
-     }
-  .navBar > li {
+    font-size: 15px;
+}
+
+.navBar>li {
     display: inline-block;
     padding: 10px 20px;
-  }
-  .navBar > li:hover {
+}
+
+.navBar>li:hover {
     background-color: #2779BF;
-  }
-  .navBar > li > a {
+}
+
+.navBar>li>a {
     color: white;
     text-decoration: none;
-  }
-   .imgBg {
+}
+
+.imgBg {
     min-height: 100%;
     min-width: 1920px;
     z-index: -1;
@@ -88,58 +108,136 @@ html{
     pointer-events: none;
     opacity: 0.7;
 }
-.fontComun{
+
+.fontComun {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.divModel{
-    margin: 15px;
-    padding: 15px; 
-   }
 
-.divModel2{
+.divModel {
+    margin: 15px;
+    padding: 15px;
+}
+
+.divModel2 {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start; 
- }
- .divModel3{
-     justify-content: flex-end;
- }
- .divModelFooter{
+    justify-content: flex-start;
+}
+
+.divModel3 {
+    justify-content: flex-end;
+}
+
+.divModelFooter {
     display: flex;
     flex-direction: column;
-    justify-content: end; 
- }
- /* .divModel2--text{
+    justify-content: end;
+}
+
+/* .divModel2--text{
      width: 250px;
  } */
- .divmodelImg{
-     justify-content: center;
- }
- .tableOpacity{
+.divModelImg {
+    display: flex;
+    justify-content: center;
+}
+
+.tableOpacity {
     opacity: 1;
 }
-.footer{
+
+.footer {
     margin: 15px;
-    padding: 15px; 
+    padding: 15px;
     text-align: center;
     opacity: 0.8;
-    }
-.form1{
+}
+
+.form1 {
     display: flexbox;
 }
-.form1>form{
+
+.form1>form {
     margin: 15px;
-    padding: 15px; 
+    padding: 15px;
 }
-@media (min-width:361px) and (max-width:768px){
-    .padre{
-        grid-template-areas: "nav encabezado encabezado"
-                             "nav principal principal"
-                             "nav principal principal"
-                             "nav art1 art2"
-                             "nav art3 art4"
-                             "nav pie pie" ;
-        
-        
+
+@media (min-width:361px) and (max-width:768px) {
+    .padre {
+        display: grid;
+        grid-template-areas: "navegacion navegacion"
+            "encabezado encabezado"
+            "parrafo1 parrafo1"
+            "sec1 sec1"
+            "sec2 sec2"
+            "vid vid"
+            "pie pie";
+        grid-template-columns: repeat(1fr);
+        grid-template-rows: repeat(1fr);
+
+
     }
+
+    .padre {
+        display: grid;
+        grid-template-areas:
+            "navegacion navegacion navegacion"
+            "encabezado encabezado encabezado"
+            "parrafo1 parrafo1 parrafo1"
+            "sec1 . sec2"
+            "vid vid vid"
+            "pie pie pie";
+        grid-template-columns: repeat(1fr);
+        grid-template-rows: repeat(1fr);
+    }
+
+    .encabezado {
+        grid-area: encabezado;
+    }
+
+    .navegacion {
+        grid-area: navegacion;
+    }
+
+    .parrafo1 {
+        grid-area: parrafo1;
+    }
+
+    .seccion1 {
+        /* width: 50%; */
+        grid-area: sec1;
+    }
+
+    .seccion2 {
+        /* width: 50%; */
+        grid-area: sec2;
+    }
+
+    .videoPrincipal {
+        grid-area: vid;
+    }
+
+    .pie {
+        grid-area: pie;
+    }
+
+    .padreContacto {
+        display: grid;
+        grid-template-areas:
+            "navegacion navegacion navegacion"
+            "titulo titulo titulo"
+            "formu formu formu"
+            "formu formu formu"
+            "formu formu formu"
+            "pie pie pie";
+        grid-template-columns: repeat(1fr);
+        grid-template-rows: repeat(1fr);
+    }
+    .titulo{
+        grid-area: titulo;
+    }
+    .formulario{
+        grid-area: formu;
+    }
+
 }
