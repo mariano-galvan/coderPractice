@@ -46,6 +46,10 @@ html {
     font-size: 35px;
     font-weight: bold;
 }
+.textoFotos{
+    padding: 15px;
+    margin: 15px;
+}
 
 .textoMediano {
     font-size: 20px;
