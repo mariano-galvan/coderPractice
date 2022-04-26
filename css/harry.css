@@ -123,10 +123,15 @@ html {
 }
 
 .imgFotos {
-    height: 300px;
-    width: 300px;
+    height: fit-content;
+    width: fit-content;
     padding: 10px;
     margin: 10px;
+}
+.imgFotos1 {
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
 }
 
 .fontComun {
