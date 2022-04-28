@@ -6,93 +6,154 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elden Ring FanPage Contacto</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/harry.css">
 
 <body>
     <img src="../images/fondo2.jpg" alt="" media="(min-width: 1000px)" class="imgBg">
-    <div class="padreContacto">
-        <header class="navegacion">
-            <nav>
+    <div class="padreContacto container-fluid">
+        <header class="navegacion row">
+            <nav class="navbar navbar-expand-lg navegacion row">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="mb-2 mb-lg-0 navBar">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="items.html" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Items
+                                </a>
+                                <ul class="dropdown-menu navBar" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="items.html#armas">Armas</a></li>
+                                    <li><a class="dropdown-item" href="items.html#armors">Armaduras y Sets</a></li>
+                                    <li><a class="dropdown-item" href="items.html#arcos">Arcos</a></li>
+                                    <li><a class="dropdown-item" href="items.html#armases">Armas especiales</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="lore.html">Lore(Historia)</a></li>
+                            <li class="nav-item"><a class="nav-link" href="fotos.html">Fotos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contacto.html">Contácto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- <nav class="row">
                 <ol class="navBar">
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="items.html">Items</a>
-                        <ul class="navBar">
-                            <li> <a href="items.html#armas">Armas</a></li>
-                            <li> <a href="items.html#armors">Armaduras y Sets</a></li>
-                            <li> <a href="items.html#arcos">Arcos</a></li>
-                            <li> <a href="items.html#armases">Armas especiales</a></li>
+                        <ul>
+                            <li><a  href="items.html#armas">Armas</a></li>
+                            <li><a  href="items.html#armors">Armaduras y Sets</a></li>
+                            <li><a  href="items.html#arcos">Arcos</a></li>
+                            <li><a  href="items.html#armases">Armas especiales</a></li>
                         </ul>
                     </li>
                     <li><a href="lore.html">Lore(Historia)</a></li>
                     <li><a href="fotos.html">Fotos</a></li>
                     <li><a href="contacto.html">Contácto</a></li>
                 </ol>
-            </nav>
+            </nav> -->
         </header>
-        <div class="divModel titulo">
-            <h1 class="textoClasico textoDorado">Contacto</h1>
+        <div class="divModel titulo row">
+            <h1 class="textoClasico textoDorado textoGrande">Contacto</h1>
         </div>
-        <div class="formulario divModel">
-            <form action="">
-                <fieldset class="field1">
-                    <div>
-                        <legend class="textoDorado">Formulatio de Contacto</legend>
+        <div class="formulario divModel row">
+            <form class="row" action="">
+                <fieldset class="field1 row">
+                    <div class="row">
+                        <legend class="textoDorado">Formulario de Contacto</legend>
                     </div>
-                    <div class="divModelForm">
+                    <div class="row form-group">
                         <label class="textoSilverContacto" for="nombre">Nombre</label>
+                        <input class="form-control" type="text" name="nombre">
                     </div>
-                    <div>
-                        <input type="text" name="nombre">
-                    </div>
-                    <div class="divModelForm">
+                    <div class="row form-group">
                         <label class="textoSilverContacto" for="telefono">Teléfono</label>
+                        <input class="form-control" type="number" name="telefono">
                     </div>
-                    <div>
-                        <input type="number" name="telefono">
-                    </div>
-                    <div class="divModelForm">
+                    <div class="row form-group">
                         <label class="textoSilverContacto" for="email">Email</label>
+                        <input class="form-control" type="email" name="email">
                     </div>
                     <div>
-                        <input type="email" name="email">
-                    </div>
-                    <div class="divModelForm">
                         <label class="textoSilverContacto" for="">Cuando quieres ser contactado?</label>
                     </div>
-                    <div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="m" name="maniana" id="flexCheckDefault">
+                        <label class="form-check-label textoSilverContacto1" for="flexCheckDefault">
+                            Mañana
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="t" name="tarde" id="flexCheckDefault">
+                        <label class="form-check-label textoSilverContacto1" for="flexCheckDefault">
+                            Tarde
+                        </label>
+                    </div>
+                    <!-- <div>
                         <input class="textoSilverContacto" type="checkbox" value="m" name="maniana">Mañana
                     </div>
                     <div>
                         <input class="textoSilverContacto" type="checkbox" value="t" name="tarde">Tarde
-                    </div>
+                    </div> -->
                     <div class="divModelForm">
                         <label class="textoSilverContacto" for="">Sexo</label>
                     </div>
-                    <input class="textoSilverContacto" type="radio" name="sexo"> Masculino
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="sexo" id="flexRadioDefault1">
+                        <label class="form-check-label textoSilverContacto1" for="flexRadioDefault1">
+                            Masculino
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="sexo">
+                        <label class="form-check-label textoSilverContacto1" for="flexRadioDefault1">
+                            Femenino
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="sexo">
+                        <label class="form-check-label textoSilverContacto1" for="flexRadioDefault1">
+                            Otro
+                        </label>
+                    </div>
+                    <!-- <input class="textoSilverContacto" type="radio" name="sexo"> Masculino
                     <input class="textoSilverContacto" type="radio" name="sexo"> Femenino
-                    <input class="textoSilverContacto" type="radio" name="sexo"> Otro
-                    <div class="divModelForm">
+                    <input class="textoSilverContacto" type="radio" name="sexo"> Otro -->
+                    <div>
                         <label class="textoSilverContacto" for="socio">Socio</label>
                     </div>
-                    <div>
-                        <select name="socio">
+                    <div >
+                        <select class="form-select" aria-label="Default select example" name="socio">
                             <option value="s">Si</option>
                             <option value="n">No</option>
                         </select>
                     </div>
                     <div class="divModelForm">
-                        <textarea name="mensaje" placeholder="Deje su mensaje aquí"></textarea>
+                        <textarea class="form-control" name="mensaje" placeholder="Deje su mensaje aquí"></textarea>
                     </div>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpiar">
+                    <div class="divModelFormBtn">
+                        <input class="btn btn-primary" type="submit" value="Enviar  ">
+                    </div>
+                    <div class="divModelFormBtn">
+                        <input class="btn btn-primary" type="reset" value="Limpiar">
+                    </div>
                 </fieldset>
             </form>
         </div>
-        <div class="pie">
+        <div class="pie row form1">
             <footer class="footer textoDorado">
                 <h4>Todos los derechos reservados</h4>
                 Mariano
             </footer>
         </div>
     </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>

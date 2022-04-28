@@ -8,14 +8,46 @@
     <title>Elden Ring FanPage Fotos</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/harry.css">
 </head>
 
 <body>
     <img src="../images/fondo2.jpg" alt="" media="(min-width: 1000px)" class="imgBg">
-    <div class="padreFotos">
-        <header class="navegacion">
-            <nav>
+    <div class="padreFotos container-fluid">
+        <header class="navegacion row">
+            <nav class="navbar navbar-expand-lg navegacion row">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="mb-2 mb-lg-0 navBar">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="items.html" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Items
+                                </a>
+                                <ul class="dropdown-menu navBar" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="items.html#armas">Armas</a></li>
+                                    <li><a class="dropdown-item" href="items.html#armors">Armaduras y Sets</a></li>
+                                    <li><a class="dropdown-item" href="items.html#arcos">Arcos</a></li>
+                                    <li><a class="dropdown-item" href="items.html#armases">Armas especiales</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="lore.html">Lore(Historia)</a></li>
+                            <li class="nav-item"><a class="nav-link" href="fotos.html">Fotos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contacto.html">Contácto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- <nav>
                 <ol class="navBar">
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="items.html">Items</a>
@@ -30,24 +62,24 @@
                     <li><a href="fotos.html">Fotos</a></li>
                     <li><a href="contacto.html">Contácto</a></li>
                 </ol>
-            </nav>
+            </nav> -->
         </header>
-        <div class="encabezadoF1">
-            <h1 class="textoClasico textoDorado textoGrande textoFotos animate__shakeX">FOTOS</h1>
+        <div class="encabezadoF1 row">
+            <h1 class="textoClasico textoDorado textoGrande animate__shakeX">FOTOS</h1>
         </div>
-        <div class="encabezadoF2">
+        <div class="encabezadoF2 row">
             <h2 class="textoDorado textoClasico textoGrande animate__animated animate__backInDown">Bosses</h2>
         </div>
-        <div data-aos="fade-left" data-aos-delay="500" class="pic1">
+        <div data-aos="fade-left" data-aos-delay="500" class="pic1 row">
             <div>
-                <h3 class="textoSilver textoGrande">RADHAN</h3>
+                <h3 class="textoSilver1 textoGrande text-center">RADHAN</h3>
             </div>
-            <div>
-                <img class="imgFotos1" src="../images/radahn1.jpg" alt="">
+            <div class="row">
+                <img class="img-fluid imgFotos rounded mx-auto d-block" src="../images/radahn1.jpg" alt="">
             </div>
         </div>
-        <aside data-aos="fade-right" data-aos-delay="500" class="txPic1">
-            <p class="textoSilver textoMediano textoCentradoCol">Starscourge Radahn is a Boss in Elden Ring.
+        <aside data-aos="fade-right" data-aos-delay="500" class="txPic1 row">
+            <p class="textoSilver textoMediano text-end textoCentro">Starscourge Radahn is a Boss in Elden Ring.
                 Starscourge
                 Radahn is a massive and destructive demigod located in Caelid, where he can be accessed from Redmane
                 Castle after activating the Radahn Festival by progressing far enough in Ranni's questline, or
@@ -57,14 +89,14 @@
         </aside>
         <div data-aos="fade-up-right" data-aos-delay="500" class="pic2">
             <div>
-                <h3 class="textoSilver textoGrande">RYKARD, LORD OF BLASPHEMY</h3>
+                <h3 class="textoSilver textoGrande text-center">RYKARD, LORD OF BLASPHEMY</h3>
             </div>
-            <div>
-                <img class="imgFotos1" src="../images/rykard.jpg" alt="">
+            <div class="row">
+                <img class="img-fluid imgFotos rounded mx-auto d-block" src="../images/rykard.jpg" alt="">
             </div>
         </div>
-        <aside data-aos="fade-up-left" data-aos-delay="500" class="txPic2">
-            <p class="textoSilver textoMediano">Rykard, Lord of Blasphemy is a Boss in Elden Ring.
+        <aside data-aos="fade-up-left" data-aos-delay="500" class="txPic2 row">
+            <p class="textoSilver textoMediano text-start textoCentro">Rykard, Lord of Blasphemy is a Boss in Elden Ring.
                 Rykard, Lord of Blasphemy is the true form of the God-Devouring Serpent, whose body has been taken
                 over by Rykard, and is found in Mt. Gelmir. This is an optional boss as players don't need to defeat
                 it to advance in Elden Ring.
@@ -73,74 +105,77 @@
                 can challenge the second phase. Note that dying to his second phase as Rykard will require you to
                 defeat the serpent once again.</p>
         </aside>
-        <div class="encabezadoF3">
+        <div class="encabezadoF3 row">
             <h2 class="textoDorado textoClasico textoGrande">NPCs</h2>
         </div>
-        <div data-aos="fade-up-left" class="pic3">
-            <div>
-                <h3 class="textoSilver textoGrande">Sellen</h3>
+        <div data-aos="fade-up-left" class="pic3 row">
+            <div class="row">
+                <h3 class="textoSilver textoGrande text-center">Sellen</h3>
             </div>
-            <div>
-                <img class="imgFotos1" src="../images/Sellen.jpg" alt="">
+            <div class="row">
+                <img class="img-fluid imgFotos rounded mx-auto d-block" src="../images/Sellen.jpg" alt="">
             </div>
         </div>
-        <aside data-aos="fade-up-right" class="txPic3">
-            <p class="textoSilver textoMediano">Sorceress Sellen is a Merchant and NPC in Elden Ring.
+        <aside data-aos="fade-up-right" class="txPic3 row">
+            <p class="textoSilver textoMediano text-end textoCentro">Sorceress Sellen is a Merchant and NPC in Elden Ring.
                 Sorceress Sellen can be found in Limgrave, inside Waypoint Ruins which is far east from Elden Ring's
                 starting point. You can learn Sorceries from her. This page covers vital information for Sorceress
                 Sellen's questline for Elden Ring. She also becomes available as an NPC Summon during specific boss
                 battles.</p>
         </aside>
 
-        <div data-aos="fade-up-right" class="pic4">
-            <div>
-                <h3 class="textoSilver textoGrande">Corhyn</h3>
+        <div data-aos="fade-up-right" class="pic4 row">
+            <div class="row">
+                <h3 class="textoSilver textoGrande text-center">Corhyn</h3>
             </div>
-            <div>
-                <img class="imgFotos1"  src="../images/Corhyn.jpg" alt="">
+            <div class="row">
+                <img class="img-fluid imgFotos rounded mx-auto d-block"  src="../images/Corhyn.jpg" alt="">
             </div>
         </div>
-        <aside data-aos="fade-up-left" class="txPic4">
-            <p class="textoSilver textoMediano">Brother Corhyn is an NPC in Elden Ring. Brother Corhyn
+        <aside data-aos="fade-up-left" class="txPic4 row">
+            <p class="textoSilver textoMediano text-start textoCentro">Brother Corhyn is an NPC in Elden Ring. Brother Corhyn
                 is a holy practitioner who will teach you practical faith-based Incantations in exchange for Runes.
                 You will encounter him once you've reached the Roundtable Hold.</p>
         </aside>
-        <div class="encabezadoF4">
+        <div class="encabezadoF4 row">
             <h2 class="textoDorado textoClasico textoGrande">Criaturas y Enemigos</h2>
         </div>
-        <div data-aos="fade-up-left" class="pic5">
-            <div>
-                <h3 class="textoSilver textoGrande">Eagle</h3>
+        <div data-aos="fade-up-left" class="pic5 row">
+            <div class="row">
+                <h3 class="textoSilver textoGrande text-center">Eagle</h3>
             </div>
-            <div>
-                <img class="imgFotos1" src="../images/eagle.jpg" alt="">
+            <div class="row">
+                <img class="img-fluid imgFotos rounded mx-auto d-block" src="../images/eagle.jpg" alt="">
             </div>
         </div>
-        <aside data-aos="fade-up-right" class="txPic5">
-            <p class="textoSilver textoMediano">Majestic Eagles can be spotted among the cliffs, even
+        <aside data-aos="fade-up-right" class="txPic5 row">
+            <p class="textoSilver textoMediano text-end textoCentro">Majestic Eagles can be spotted among the cliffs, even
                 during these times.</p>
         </aside>
-        <div data-aos="fade-up-right" class="pic6">
-            <div>
-                <h3 class="textoSilver textoGrande">Crab</h3>
+        <div data-aos="fade-up-right" class="pic6 row">
+            <div class="row">
+                <h3 class="textoSilver textoGrande text-center">Crab</h3>
             </div>
-            <div>
-                <img class="imgFotos1" src="../images/crab.jpg" alt="">
+            <div class="row">
+                <img class="img-fluid imgFotos rounded mx-auto d-block" src="../images/crab.jpg" alt="">
             </div>
         </div>
-        <aside data-aos="fade-up-left" class="txPic6">
-            <p class="textoSilver textoMediano">Giant Crabs crowd the shores and shallows, attacking any
+        <aside data-aos="fade-up-left" class="txPic6 row">
+            <p class="textoSilver textoMediano text-start textoCentro">Giant Crabs crowd the shores and shallows, attacking any
                 who approach by swinging their powerful claws and spewing forth high-pressure water.</p>
         </aside>
-
-        <footer class="footer textoDorado pie">
-            <h4>Todos los derechos reservados</h4>
-            Mariano
-        </footer>
+        <div class="pie row form1">
+            <footer class="footer textoDorado">
+                <h4>Todos los derechos reservados</h4>
+                Mariano
+            </footer>
+        </div>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();
     </script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
