@@ -1,8 +1,8 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 html {
     font-size: 62.5%;
@@ -102,17 +102,17 @@ html {
 }
 
 .navBar {
-    padding-left: 0px;
-    padding-top: 0px;
+    /* padding-left: 0px;
+    padding-top: 0px; */
     background-color: #062521;
     opacity: 0.8;
     text-align: center;
     text-decoration: none;
     font-size: 15px;
-    /* position: fixed;
+    /* position: fixed; */
     top: 0;
-    width: 100%; */
-}
+    /* width: 100%; */
+} 
 
 .navBar>li {
     display: inline-block;
@@ -316,7 +316,7 @@ html {
 /* @media (min-width:361px) and (max-width:768px) {
     .padre {
         display: grid;
-        grid-template-areas: 
+        grid-template-areas:
             "navegacion navegacion"
             "encabezado encabezado"
             "parrafo1 parrafo1"
