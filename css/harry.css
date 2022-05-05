@@ -227,7 +227,8 @@ html {
     grid-template-rows: repeat(1fr);
 }
 
-.padreFotos {
+.padreFotos 
+{
     display: grid;
     grid-template-areas:
         "navegacion	navegacion navegacion"
