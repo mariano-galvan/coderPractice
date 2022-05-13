@@ -1,0 +1,69 @@
+.divModel {
+    margin: 15px;
+    padding: 15px;
+}
+.padreContacto {
+    display: grid;
+    grid-template-areas:
+        "navegacion navegacion navegacion"
+        "titulo titulo titulo"
+        "formu formu formu"
+        "formu formu formu"
+        "formu formu formu"
+        "pie pie pie";
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(1fr);
+}
+
+.titulo {
+    grid-area: titulo;
+}
+
+.formulario {
+    grid-area: formu;
+}
+.navegacion {
+    grid-area: navegacion;
+}
+
+.textoSilverContacto {
+    color: #9d9d9d;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.textoSilverContacto1 {
+    
+    @extend .textoSilverContacto;
+    font-size: 13px;
+}
+.divModelForm {
+    padding: 10px 10px 10px 0px;
+}
+.divModelFormBtn {
+    padding: 0px 0px 10px 0px;
+}
+
+$botones:(
+    enviar: #229954,
+    limpiar: #1F618D
+);
+@each $bt, $color in $botones {
+    .btn--#{$bt}{
+        background-color: $color;
+    }
+    
+}
+
+@mixin formatter($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+.field1 {
+    @include formatter (400px, auto);
+    display: block;
+    // width: 400px;
+    // height: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
