@@ -111,7 +111,7 @@ html {
     font-size: 15px;
     /* position: fixed; */
     top: 0;
-    /* width: 100%; */
+    width: 100%;
 } 
 
 .navBar>li {
@@ -314,20 +314,6 @@ html {
     grid-area: pic6;
 }
 
-/* @media (min-width:361px) and (max-width:768px) {
-    .padre {
-        display: grid;
-        grid-template-areas:
-            "navegacion navegacion"
-            "encabezado encabezado"
-            "parrafo1 parrafo1"
-            "sec1 sec1"
-            "sec2 sec2"
-            "vid vid"
-            "pie pie";
-        grid-template-columns: repeat(1fr);
-        grid-template-rows: repeat(1fr);
-    } */
 .encabezado {
     grid-area: encabezado;
 }
@@ -398,4 +384,117 @@ html {
 
 .divModelForm {
     padding: 10px 10px 10px 0px;
+}
+
+.itemsAlign{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.divModelForm1 {
+    padding: 10px 350px 10px 0px;
+}
+
+.textoAcordion{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.imgItemsSets{
+    width: 200px;
+    height: 375px;
+}
+.divModelForm2 {
+    padding: 10px 180px 10px 0px;
+}
+.divModelForm3 {
+    padding: 10px 300px 10px 0px;
+}
+
+.imgItems{
+    width: 48px;
+    height: 48px;
+}
+
+.backGroundAcordeon{
+    background-color: rgb(78, 102, 102);
+}
+
+@media (min-width:769px) and (max-width:1200px) {
+    .padre {
+        grid-template-areas:
+            "navegacion navegacion navegacion"
+            "encabezado encabezado encabezado"
+            "parrafo1 parrafo1 parrafo1"
+            "sec1 sec1 sec1"
+            "sec2 sec2 sec2"
+            "car car car"
+            "vid vid vid"
+            "pie pie pie";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    } 
+}
+
+@media (min-width:361px) and (max-width:768px) {
+    .padre {
+        grid-template-areas:
+            "navegacion navegacion navegacion"
+            "encabezado encabezado encabezado"
+            "parrafo1 parrafo1 parrafo1"
+            "sec1 sec1 sec1"
+            "sec2 sec2 sec2"
+            "car car car"
+            "vid vid vid"
+            "pie pie pie";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    } 
+}
+
+@media (min-width:769px) and (max-width:1200px) {
+    .padreFotos {
+        grid-template-areas:
+        "navegacion	navegacion navegacion"
+        "encabezadoF1 encabezadoF1 encabezadoF1"
+        "encabezadoF2 encabezadoF2 encabezadoF2"
+        "txPic1 pic1 pic1"
+        "pic2 pic2 txPic2"
+        "encabezadoF3 encabezadoF3 encabezadoF3"
+        "txPic3 pic3 pic3"
+        "pic4 pic4 txPic4"
+        "encabezadoF4 encabezadoF4 encabezadoF4"
+        "txPic5 pic5 pic5"
+        "pic6 pic6	txPic6"
+        "pie pie pie";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    } 
+}
+
+@media (min-width:361px) and (max-width:768px) {
+    .padreFotos {
+        grid-template-areas:
+        "navegacion	navegacion navegacion"
+        "encabezadoF1 encabezadoF1 encabezadoF1"
+        "encabezadoF2 encabezadoF2 encabezadoF2"
+        "txPic1 txPic1 txPic1 "
+        "pic1 pic1 pic1"
+        "txPic2 txPic2 txPic2"
+        "pic2 pic2 pic2"
+        "encabezadoF3 encabezadoF3 encabezadoF3"
+        "txPic3 txPic3 txPic3"
+        "pic3 pic3 pic3"
+        "txPic4 txPic4 txPic4"
+        "pic4 pic4 pic4"
+        "encabezadoF4 encabezadoF4 encabezadoF4"
+        "txPic5 txPic5 txPic5"
+        "pic5 pic5 pic5"
+        "txPic6 txPic6 txPic6"
+        "pic6 pic6 pic6"
+        "pie pie pie";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    } 
 }
