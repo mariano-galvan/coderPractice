@@ -105,13 +105,13 @@ html {
     /* padding-left: 0px;
     padding-top: 0px; */
     background-color: #062521;
-    opacity: 0.8;
-    text-align: center;
+    opacity: 1;
+    text-align: left;
     text-decoration: none;
     font-size: 15px;
     /* position: fixed; */
     top: 0;
-    width: 100%;
+    min-width: 100%;
 } 
 
 .navBar>li {
@@ -420,6 +420,13 @@ html {
 .backGroundAcordeon{
     background-color: rgb(78, 102, 102);
 }
+body{
+    height: 100vh;
+}
+
+.divModeling{
+    height: calc(100vh - 60px);
+}
 
 @media (min-width:769px) and (max-width:1200px) {
     .padre {
@@ -472,6 +479,7 @@ html {
         grid-template-rows: auto;
     } 
 }
+
 
 @media (min-width:361px) and (max-width:768px) {
     .padreFotos {

@@ -83,6 +83,17 @@
     font-weight: bold;
 }
 
+body{
+    min-height: 100vh;
+}
+
+.divModeling{
+    height: calc(100vh - 60px);
+}
+.divModeling2{
+    height: 100vh
+}
+
 @media (min-width:769px) and (max-width:1200px) {
     .padre {
         grid-template-areas:

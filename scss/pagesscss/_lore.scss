@@ -13,12 +13,12 @@
 
 .navBar{
     background-color: #062521;
-    opacity: 0.8;
-    text-align: center;
+    opacity: 1;
+    text-align: left;
     text-decoration: none;
     font-size: 15px;
     top: 0;
-    width: 100%;
+    min-width: 100%;
         li{
             display: inline-block;
             padding: 10px 20px;
@@ -60,14 +60,11 @@
     grid-area: pie;
 }
 .footer {
-    /* margin: 15px;
-    padding: 15px; */
     text-align: center;
     opacity: 0.8;
     margin-top: auto;
     width: 100%;
     height: 60px;
-    /* Height of the footer */
     background: rgb(5, 48, 35);
 }
 .form1 {

@@ -12,12 +12,12 @@
 
 .navBar {
   background-color: #062521;
-  opacity: 0.8;
-  text-align: center;
+  opacity: 1;
+  text-align: left;
   text-decoration: none;
   font-size: 15px;
   top: 0;
-  width: 100%; }
+  min-width: 100%; }
   .navBar li {
     display: inline-block;
     padding: 10px 20px; }
@@ -56,14 +56,11 @@
   grid-area: pie; }
 
 .footer {
-  /* margin: 15px;
-    padding: 15px; */
   text-align: center;
   opacity: 0.8;
   margin-top: auto;
   width: 100%;
   height: 60px;
-  /* Height of the footer */
   background: #053023; }
 
 .form1 {
@@ -118,86 +115,13 @@
   flex-wrap: wrap;
   margin: auto; }
 
-.padre {
-  display: grid;
-  grid-template-areas: "navegacion navegacion navegacion" "encabezado encabezado encabezado" "parrafo1 parrafo1 parrafo1" "sec1 . sec2" ". car ." ". vid ." "pie pie pie";
-  grid-template-columns: repeat(1fr);
-  grid-template-rows: repeat(1fr); }
-
-.encabezado {
-  grid-area: encabezado; }
-
-.navegacion {
-  grid-area: navegacion; }
-
-.parrafo1 {
-  grid-area: parrafo1; }
-
-.car {
-  grid-area: car; }
-
-.seccion1 {
-  grid-area: sec1; }
-
-.seccion2 {
-  grid-area: sec2; }
-
-.videoPrincipal {
-  grid-area: vid; }
-
-.pie {
-  grid-area: pie; }
-
-.textoDorado--align {
-  text-align: center; }
-
-.textoSilver--align {
-  text-align: justify; }
-
-.divModelImg {
-  display: flex;
-  justify-content: center; }
-
-.videoPortada {
-  border-radius: 15px; }
-
-.textoSilver {
-  margin: 10px;
-  color: #9d9d9d;
-  font-size: 20px; }
-
-.textoClasico {
-  text-align: center;
-  font-weight: bolder; }
-
-.textoDorado {
-  color: goldenrod;
-  font-weight: bolder;
-  font-size: 15px; }
-
-.textoGrande {
-  font-size: 35px;
-  font-weight: bold; }
-
-@media (min-width: 769px) and (max-width: 1200px) {
-  .padre {
-    grid-template-areas: "navegacion navegacion navegacion" "encabezado encabezado encabezado" "parrafo1 parrafo1 parrafo1" "sec1 sec1 sec1" "sec2 sec2 sec2" "car car car" "vid vid vid" "pie pie pie";
-    grid-template-columns: auto;
-    grid-template-rows: auto; } }
-
-@media (min-width: 361px) and (max-width: 768px) {
-  .padre {
-    grid-template-areas: "navegacion navegacion navegacion" "encabezado encabezado encabezado" "parrafo1 parrafo1 parrafo1" "sec1 sec1 sec1" "sec2 sec2 sec2" "car car car" "vid vid vid" "pie pie pie";
-    grid-template-columns: auto;
-    grid-template-rows: auto; } }
-
 .itemsAlign {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; }
 
 .divModelForm1 {
-  padding: 10px 350px 10px 0px; }
+  padding: 10px 270px 10px 0px; }
 
 .textoAcordion {
   font-size: 30px;
@@ -278,8 +202,8 @@
   grid-area: pic6; }
 
 .imgFotos {
-  height: 500px;
-  width: 500px; }
+  height: 300px;
+  width: 350px; }
 
 .textoFotos {
   padding: 15px;
@@ -302,5 +226,87 @@
 @media (min-width: 361px) and (max-width: 768px) {
   .padreFotos {
     grid-template-areas: "navegacion	navegacion navegacion" "encabezadoF1 encabezadoF1 encabezadoF1" "encabezadoF2 encabezadoF2 encabezadoF2" "txPic1 txPic1 txPic1 " "pic1 pic1 pic1" "txPic2 txPic2 txPic2" "pic2 pic2 pic2" "encabezadoF3 encabezadoF3 encabezadoF3" "txPic3 txPic3 txPic3" "pic3 pic3 pic3" "txPic4 txPic4 txPic4" "pic4 pic4 pic4" "encabezadoF4 encabezadoF4 encabezadoF4" "txPic5 txPic5 txPic5" "pic5 pic5 pic5" "txPic6 txPic6 txPic6" "pic6 pic6 pic6" "pie pie pie";
+    grid-template-columns: auto;
+    grid-template-rows: auto; } }
+
+.padre {
+  display: grid;
+  grid-template-areas: "navegacion navegacion navegacion" "encabezado encabezado encabezado" "parrafo1 parrafo1 parrafo1" "sec1 . sec2" ". car ." ". vid ." "pie pie pie";
+  grid-template-columns: repeat(1fr);
+  grid-template-rows: repeat(1fr); }
+
+.encabezado {
+  grid-area: encabezado; }
+
+.navegacion {
+  grid-area: navegacion; }
+
+.parrafo1 {
+  grid-area: parrafo1; }
+
+.car {
+  grid-area: car; }
+
+.seccion1 {
+  grid-area: sec1; }
+
+.seccion2 {
+  grid-area: sec2; }
+
+.videoPrincipal {
+  grid-area: vid; }
+
+.pie {
+  grid-area: pie; }
+
+.textoDorado--align {
+  text-align: center; }
+
+.textoSilver--align {
+  text-align: justify; }
+
+.divModelImg {
+  display: flex;
+  justify-content: center; }
+
+.videoPortada {
+  border-radius: 15px; }
+
+.textoSilver {
+  margin: 10px;
+  color: #9d9d9d;
+  font-size: 20px; }
+
+.textoClasico {
+  text-align: center;
+  font-weight: bolder; }
+
+.textoDorado {
+  color: goldenrod;
+  font-weight: bolder;
+  font-size: 15px; }
+
+.textoGrande {
+  font-size: 35px;
+  font-weight: bold; }
+
+body {
+  min-height: 100vh; }
+
+.divModeling {
+  height: calc(100vh - 60px); }
+
+.divModeling2 {
+  height: 100vh; }
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .padre {
+    grid-template-areas: "navegacion navegacion navegacion" "encabezado encabezado encabezado" "parrafo1 parrafo1 parrafo1" "sec1 sec1 sec1" "sec2 sec2 sec2" "car car car" "vid vid vid" "pie pie pie";
+    grid-template-columns: auto;
+    grid-template-rows: auto; } }
+
+@media (min-width: 361px) and (max-width: 768px) {
+  .padre {
+    grid-template-areas: "navegacion navegacion navegacion" "encabezado encabezado encabezado" "parrafo1 parrafo1 parrafo1" "sec1 sec1 sec1" "sec2 sec2 sec2" "car car car" "vid vid vid" "pie pie pie";
     grid-template-columns: auto;
     grid-template-rows: auto; } }
