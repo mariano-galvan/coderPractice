@@ -15,7 +15,7 @@
         "pic6 .	txPic6"
         "pie pie pie";
     grid-template-columns: 48% 2% 48%;
-    grid-template-rows: 12fr;
+    grid-template-rows: auto;
 }
 .encabezadoF1 {
     grid-area: encabezadoF1;
@@ -101,6 +101,10 @@
 .textoCentro {
     display: flex;
     align-items: center;
+}
+.backgTitles{
+    background-color: rgb(5, 48, 35);
+    margin-top: 20px;
 }
 
 @media (min-width:769px) and (max-width:1200px) {

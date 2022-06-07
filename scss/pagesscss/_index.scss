@@ -1,127 +1,155 @@
-.padre {
-    display: grid;
-    grid-template-areas:
-        "navegacion navegacion navegacion"
-        "encabezado encabezado encabezado"
-        "parrafo1 parrafo1 parrafo1"
-        "sec1 . sec2"
-        ". car ."
-        ". vid ."
-        "pie pie pie";
-    grid-template-columns: repeat(1fr);
-    grid-template-rows: repeat(1fr);
-}
+ .navbar {
+     position: sticky;
+     top: 0px;
+     z-index: 1;
+ }
+ body{
+     position: relative;
+     min-height: 100vh;
+     padding-bottom: 60px;
+ }
 
-.encabezado {
-    grid-area: encabezado;
-}
+ .nav-item {
+     margin: 0.5rem;
+     border-radius: 10px;
+     font-weight: bold;
+     background-color: rgb(5, 48, 35);
+ }
 
-.navegacion {
-    grid-area: navegacion;
-}
+ .navbar-collapse {
+     flex-grow: 0;
+ }
 
-.parrafo1 {
-    grid-area: parrafo1;
-}
+ .navbar-toggler {
+     border: solid 5px;
+     background-color: goldenrod;
+ }
 
-.car {
-    grid-area: car;
-}
+ .padre {
+     display: grid;
+     grid-template-areas:
+         "navegacion navegacion navegacion"
+         "encabezado encabezado encabezado"
+         "parrafo1 parrafo1 parrafo1"
+         "sec1 . sec2"
+         ". car ."
+         ". vid ."
+         "pie pie pie";
+     grid-template-columns: repeat(1fr);
+     grid-template-rows: repeat(1fr);
+ }
 
-.seccion1 {
-    grid-area: sec1;
-}
+ .encabezado {
+     grid-area: encabezado;
+ }
 
-.seccion2 {
-    grid-area: sec2;
-}
+ .navegacion {
+     grid-area: navegacion;
+ }
 
-.videoPrincipal {
-    grid-area: vid;
-}
+ .parrafo1 {
+     grid-area: parrafo1;
+ }
 
-.pie {
-    grid-area: pie;
-}
+ .car {
+     grid-area: car;
+ }
 
-.textoDorado--align {
-    text-align: center;
-}
+ .seccion1 {
+     grid-area: sec1;
+ }
 
-.textoSilver--align {
-    text-align: justify;
-}
+ .seccion2 {
+     grid-area: sec2;
+ }
 
-.divModelImg {
-    display: flex;
-    justify-content: center;
-}
+ .videoPrincipal {
+     grid-area: vid;
+ }
 
-.videoPortada {
-    border-radius: 15px;
-}
+ .pie {
+     grid-area: pie;
+ }
 
-.textoSilver {
-    margin: 10px;
-    color: #9d9d9d;
-    font-size: 20px;
-}
+ .textoDorado--align {
+     text-align: center;
+ }
 
-.textoClasico {
-    text-align: center;
-    font-weight: bolder;
-}
+ .textoSilver--align {
+     text-align: justify;
+ }
 
-.textoDorado {
-    color: goldenrod;
-    font-weight: bolder;
-    font-size: 15px;
-}
+ .divModelImg {
+     display: flex;
+     justify-content: center;
+ }
 
-.textoGrande {
-    font-size: 35px;
-    font-weight: bold;
-}
+ .videoPortada {
+     border-radius: 15px;
+ }
 
-body{
-    min-height: 100vh;
-}
+ .textoSilver {
+     margin: 10px;
+     color: #f0f0f0dc;
+     font-size: 20px;
+ }
 
-.divModeling{
-    height: calc(100vh - 60px);
-}
-.divModeling2{
-    height: 100vh
-}
+ .textoClasico {
+     text-align: center;
+     font-weight: bolder;
+ }
 
-@media (min-width:769px) and (max-width:1200px) {
-    .padre {
-        grid-template-areas:
-            "navegacion navegacion navegacion"
-            "encabezado encabezado encabezado"
-            "parrafo1 parrafo1 parrafo1"
-            "sec1 sec1 sec1"
-            "sec2 sec2 sec2"
-            "car car car"
-            "vid vid vid"
-            "pie pie pie";
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-    } 
-}
+ .textoDorado {
+     color: goldenrod;
+     font-weight: bolder;
+     font-size: 15px;
+ }
 
-@media (min-width:361px) and (max-width:768px) {
-    .padre {
-        grid-template-areas:
-            "navegacion navegacion navegacion"
-            "encabezado encabezado encabezado"
-            "parrafo1 parrafo1 parrafo1"
-            "sec1 sec1 sec1"
-            "sec2 sec2 sec2"
-            "car car car"
-            "vid vid vid"
-            "pie pie pie";
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-    } 
-}
+ .textoGrande {
+     font-size: 35px;
+     font-weight: bold;
+ }
+
+ body {
+     min-height: 100vh;
+ }
+
+ .divModeling {
+     height: calc(100vh - 60px);
+ }
+
+ .divModeling2 {
+     height: 100vh
+ }
+
+ @media (min-width:769px) and (max-width:1200px) {
+     .padre {
+         grid-template-areas:
+             "navegacion navegacion navegacion"
+             "encabezado encabezado encabezado"
+             "parrafo1 parrafo1 parrafo1"
+             "sec1 sec1 sec1"
+             "sec2 sec2 sec2"
+             "car car car"
+             "vid vid vid"
+             "pie pie pie";
+         grid-template-columns: auto;
+         grid-template-rows: auto;
+     }
+ }
+
+ @media (min-width:361px) and (max-width:768px) {
+     .padre {
+         grid-template-areas:
+             "navegacion navegacion navegacion"
+             "encabezado encabezado encabezado"
+             "parrafo1 parrafo1 parrafo1"
+             "sec1 sec1 sec1"
+             "sec2 sec2 sec2"
+             "car car car"
+             "vid vid vid"
+             "pie pie pie";
+         grid-template-columns: auto;
+         grid-template-rows: auto;
+     }
+ }

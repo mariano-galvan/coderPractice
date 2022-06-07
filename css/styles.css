@@ -58,15 +58,66 @@
 .footer {
   text-align: center;
   opacity: 0.8;
-  margin-top: auto;
+  margin-top: 20px;
   width: 100%;
   height: 60px;
-  background: #053023; }
+  background: #053023;
+  bottom: 0;
+  position: absolute;
+  clear: both; }
 
 .form1 {
   display: flexbox;
   flex-direction: column;
   margin: 15px 0px 0px 0px; }
+
+.bodLore {
+  width: 100%;
+  height: 100%;
+  background: #000; }
+
+.fade {
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+  top: -25px;
+  background-image: linear-gradient(0deg, transparent, black 75%);
+  z-index: 1; }
+
+.elden-ring {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 500px;
+  color: #feda4a;
+  font-size: 500%;
+  font-weight: 600;
+  letter-spacing: 6px;
+  line-height: 150%;
+  perspective: 400px;
+  text-align: justify; }
+
+.crawl {
+  position: relative;
+  top: 9999px;
+  transform-origin: 50% 100%;
+  animation: crawl 60s linear; }
+
+.crawl > .title {
+  font-size: 90%;
+  text-align: center; }
+
+.crawl > .title h1 {
+  margin: 0 0 100px;
+  text-transform: uppercase; }
+
+@keyframes crawl {
+  0% {
+    top: 0;
+    transform: rotateX(20deg) translateZ(0); }
+  100% {
+    top: -6000px;
+    transform: rotateX(25deg) translateZ(-2500px); } }
 
 .divModel {
   margin: 15px;
@@ -148,7 +199,7 @@
   display: grid;
   grid-template-areas: "navegacion	navegacion navegacion" "encabezadoF1 encabezadoF1 encabezadoF1" "encabezadoF2 encabezadoF2 encabezadoF2" "txPic1 . pic1" "pic2 .	txPic2" "encabezadoF3 encabezadoF3 encabezadoF3" "txPic3 . pic3" "pic4 . txPic4" "encabezadoF4 encabezadoF4 encabezadoF4" "txPic5 . pic5" "pic6 .	txPic6" "pie pie pie";
   grid-template-columns: 48% 2% 48%;
-  grid-template-rows: 12fr; }
+  grid-template-rows: auto; }
 
 .encabezadoF1 {
   grid-area: encabezadoF1; }
@@ -217,6 +268,10 @@
   display: flex;
   align-items: center; }
 
+.backgTitles {
+  background-color: #053023;
+  margin-top: 20px; }
+
 @media (min-width: 769px) and (max-width: 1200px) {
   .padreFotos {
     grid-template-areas: "navegacion	navegacion navegacion" "encabezadoF1 encabezadoF1 encabezadoF1" "encabezadoF2 encabezadoF2 encabezadoF2" "txPic1 pic1 pic1" "pic2 pic2 txPic2" "encabezadoF3 encabezadoF3 encabezadoF3" "txPic3 pic3 pic3" "pic4 pic4 txPic4" "encabezadoF4 encabezadoF4 encabezadoF4" "txPic5 pic5 pic5" "pic6 pic6	txPic6" "pie pie pie";
@@ -228,6 +283,29 @@
     grid-template-areas: "navegacion	navegacion navegacion" "encabezadoF1 encabezadoF1 encabezadoF1" "encabezadoF2 encabezadoF2 encabezadoF2" "txPic1 txPic1 txPic1 " "pic1 pic1 pic1" "txPic2 txPic2 txPic2" "pic2 pic2 pic2" "encabezadoF3 encabezadoF3 encabezadoF3" "txPic3 txPic3 txPic3" "pic3 pic3 pic3" "txPic4 txPic4 txPic4" "pic4 pic4 pic4" "encabezadoF4 encabezadoF4 encabezadoF4" "txPic5 txPic5 txPic5" "pic5 pic5 pic5" "txPic6 txPic6 txPic6" "pic6 pic6 pic6" "pie pie pie";
     grid-template-columns: auto;
     grid-template-rows: auto; } }
+
+.navbar {
+  position: sticky;
+  top: 0px;
+  z-index: 1; }
+
+body {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 60px; }
+
+.nav-item {
+  margin: 0.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: #053023; }
+
+.navbar-collapse {
+  flex-grow: 0; }
+
+.navbar-toggler {
+  border: solid 5px;
+  background-color: goldenrod; }
 
 .padre {
   display: grid;
@@ -274,7 +352,7 @@
 
 .textoSilver {
   margin: 10px;
-  color: #9d9d9d;
+  color: #f0f0f0dc;
   font-size: 20px; }
 
 .textoClasico {
